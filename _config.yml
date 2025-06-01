@@ -4,14 +4,15 @@ title: "徒然映画Blog"
 description: "鑑賞した映画の感想を徒然なるままに書き綴ります"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-domain: turedure-san.github.io
-url: https://turedure-san.github.io
-baseurl: /turedure-san/
-google_analytics: 'G-VG82RWQLWD'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+domain: turedure-san.netlify.app
+url: https://turedure-san.netlify.app
+baseurl: 
+google_analytics: G-VG82RWQLWD
+# mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
+language: ja
+locale: ja_JP
 
 # Authors
 authors:
@@ -19,6 +20,7 @@ authors:
     name: TK
     display_name: TK    
     avatar: 'assets/images/avatar.png'
+    url: https://turedure-san.netlify.app/profile/
     email: ttsb480@yahoo.co.jp
     web: 
     twitter: 
@@ -55,11 +57,14 @@ kramdown:
       line_numbers: true
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
+adsense: "enabled"
+adsense-data-ad-client: "ca-pub-7307109982287798"
+adsense-data-ad-slot: "7562494891"
 
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+# タイムゾーン設定（← 追加）
+#timezone: Asia/Tokyo

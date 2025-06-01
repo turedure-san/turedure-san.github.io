@@ -1,21 +1,19 @@
-<script src="{{site.baseurl}}/assets/js/lunr.js"></script>
-
+<link href="{{site.baseurl}}/pagefind/pagefind-ui.css" rel="stylesheet">
 
 <style>
-    .lunrsearchresult .title {color: #d9230f;}
-    .lunrsearchresult .url {color: silver;}
-    .lunrsearchresult a {display: block; color: #777;}
-    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
-    .lunrsearchresult a:hover .title {text-decoration: underline;}
+	.pagefind-ui__result-title {color: #d9230f;}
+	.pagefind-ui__result-url {color: silver;}
+	.pagefind-ui__result a {display: block; color: #777;}
+	.pagefind-ui__result a:hover, .pagefind-ui__result a:focus {text-decoration: none;}
+	.pagefind-ui__result a:hover .pagefind-ui__result-title {text-decoration: underline;}
 </style>
 
 
-<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
-</form>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+</script>
 
-<div id="lunrsearchresults">
-    <ul></ul>
-</div>
-
-<script src="{{site.baseurl}}/assets/js/lunrsearchengine.js"></script>
+<script src="{{site.baseurl}}/pagefind/pagefind-ui.js"></script>
