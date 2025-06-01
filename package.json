@@ -1,5 +1,8 @@
 {
   "scripts": {
-    "build": "bundle exec jekyll build --trace && pagefind --source _site"
+    "build": "bundle exec jekyll build && npx pagefind --source _site"
+  },
+  "devDependencies": {
+    "pagefind": "^1.0.0"
   }
 }
